@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Run hello.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/hello.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Run Pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-s", "-v"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Run Evidently Monitor",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/evidently_monitor.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}

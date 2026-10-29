@@ -1,0 +1,6 @@
+# MLOps Internal POE Dependencies
+pytest>=7.0.0
+evidently>=0.4.0
+pandas>=2.0.0,<2.3.0
+numpy>=1.24.0
+scikit-learn>=1.3.0

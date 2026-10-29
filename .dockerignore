@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+.vscode/
+.pytest_cache/
+evidently_reports/
+*.html
+*.json
+README.md

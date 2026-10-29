@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Run Hello App",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python hello.py",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "2. Run Pytest Suite",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/pytest -s -v",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "3. Build Docker Image",
+      "type": "shell",
+      "command": "docker build -t hello-mlops:alpine .",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "4. Run Docker Container",
+      "type": "shell",
+      "command": "docker run --rm hello-mlops:alpine",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "5. Run Evidently Monitor",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python evidently_monitor.py",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}

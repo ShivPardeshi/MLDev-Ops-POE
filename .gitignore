@@ -1,0 +1,28 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Pytest / Test reports
+.pytest_cache/
+pytest_report.xml
+.coverage
+htmlcov/
+
+# VSCode user specific
+.vscode/.ropeproject
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Generated Evidently outputs (optional to track, or track template)
+evidently_reports/
