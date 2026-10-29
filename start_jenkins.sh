@@ -33,8 +33,8 @@ else
       jenkins/jenkins:lts
 fi
 
-echo "[+] Waiting for Jenkins to initialize (15 seconds)..."
-sleep 15
+echo "[+] Configuring Jenkins container environment..."
+docker exec -u 0 "${CONTAINER_NAME}" chmod 666 /var/run/docker.sock 2>/dev/null || true
 
 echo "================================================================="
 echo "[✓] Jenkins is up and running at: http://localhost:${PORT}"
