@@ -82,7 +82,7 @@ You can run Jenkins using **Method A (Docker - Recommended)** or **Method B (Hom
      `Pipeline script from SCM`
    - **SCM**: Select `Git`
    - **Repository URL**: Enter your GitHub repository URL:
-     `https://github.com/<YOUR_GITHUB_USERNAME>/mlops-internal-poe.git`
+     `https://github.com/ShivPardeshi/MLDev-Ops-POE.git`
    - **Credentials**:
      - For public repositories, leave as *None*.
      - For private repositories, click **Add > Jenkins** and provide your GitHub Personal Access Token (PAT).

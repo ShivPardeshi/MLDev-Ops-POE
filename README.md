@@ -64,7 +64,7 @@ Standard Git repository initialized with comprehensive [`.gitignore`](./.gitigno
 git init
 git add .
 git commit -m "feat: complete MLOps POE 12-step pipeline structure"
-git remote add origin https://github.com/<YOUR_USERNAME>/mlops-internal-poe.git
+git remote add origin https://github.com/ShivPardeshi/MLDev-Ops-POE.git
 git branch -M main
 git push -u origin main
 ```
